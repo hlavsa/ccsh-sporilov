@@ -1,0 +1,306 @@
+<div class="body-wrapper">
+  <div class="app-banner app-banner--warning" id="app-banner">
+    <div class="width-container">
+      <p class="alert-body">
+        Zveme vás na XX. záhradní slavnost na Spořilově.
+        <br>
+        <br>
+        Ta se uskuteční 20. června, od 14:00. Dětský program připraven.
+      </p>
+      <div>
+        <button class="hide-button app-banner__button" onclick="hideSection()">Schovat toto oznámení</button>
+      </div>
+    </div>
+  </div>
+
+  <main role="main" id="content">
+    <div class="intro-wrapper">
+      <div class="container-px-25 container container--intro">
+        <h1 class="utilities-font-80_42 utilities-mb-60_30 utilities-mb-20">Náboženská obec <abbr title="Církev československá husitská">CČSH</abbr><br>Praha-Spořilov</h1>
+        <div style="max-width: 550px;">
+          <p class="utilities-font-20_16 intro-info intro-opacity"> Založena v roce <span class="utilities-color-red utilities-fweight-700">1938</span>. Bohoslužba v <span class="utilities-color-red utilities-fweight-700">9:30</span>, každou druhou neděli.</p>
+          <br>
+          <p class="utilities-font-20_16">Bohoslužba na <span class="utilities-color-red utilities-fweight-700">Zahradním městě</span>, ulice Sněženkova,<br>ve <span class="utilities-color-red utilities-fweight-700">14:00</span>, každou neděli.</p>
+
+        </div>
+      </div>
+      <div class="image--overflow_hidden intro-image">
+        <div class="image__container image__filter image__loaded" style="width: 90%;">
+          <%= image_tag 'sporilov.png', class: 'image__img image__loaded', alt: 'Úvodní ilustrace. Dominatu tvoří samotná budova obce. Kolem stromy a lidé.' %>
+        </div>
+      </div>
+    </div>
+    <section id="bohosluzby" class="box block-difino-course article-list with-hover-and-active course">
+      <div class="container-px-25 container" >
+        <h2 class="utilities-font-24_20 utilities-mb-15 utilities-mb-25">Bohoslužby</h2>
+      </div>
+      <div class="body container-px-25 container">
+        <div class="container-px-25 container" >
+            <h3 class="utilities-mb-15 utilities-mb-25">Nadcházející</h3>
+          </div>
+        <ul>
+          <article class="container two-col contextual-links-region utilities-mb-25">
+            <div class="group-left">
+              <div class="day">14</div>
+              <div class="month">března</div>
+            </div>
+            <div class="group-right">
+              <h2>
+              <span>Marek, 7:1-23</span>
+              </h2>
+              <p class="ingress">kratky popis o cem se bude mluvit.</p>
+            </div>
+          </article>
+          <div class="container-px-25 container" >
+            <h3 class=" utilities-mb-15 utilities-mb-25">Předchozí týdny</h3>
+          </div>
+          <article class="container two-col contextual-links-region">
+            <div class="group-left">
+              <div class="day">10</div>
+              <div class="month">března</div>
+            </div>
+            <div class="group-right">
+              <h2>
+              <span>Marek, 7:1-23</span>
+              </h2>
+              <p class="ingress">kratky popis o cem se bude mluvit.</p>
+            </div>
+          </article>
+          <article class="container two-col contextual-links-region">
+            <div class="group-left">
+              <div class="day">14</div>
+              <div class="month">února</div>
+            </div>
+            <div class="group-right">
+              <h2>
+              <span>Marek, 7:1-23</span>
+              </h2>
+              <p class="ingress">kratky popis o cem se bude mluvit.</p>
+            </div>
+          </article>
+          <article class="container two-col contextual-links-region">
+            <div class="group-left">
+              <div class="day">14</div>
+              <div class="month">února</div>
+            </div>
+            <div class="group-right">
+              <h2>
+              <span>Marek, 7:1-23</span>
+              </h2>
+              <p class="ingress">kratky popis o cem se bude mluvit.</p>
+            </div>
+          </article>              
+        </ul>
+      </div>          
+    </section>
+    <div class="divider">
+      <%= image_tag 'sprite.svg#divider-usage', class: 'divider__image', alt: 'Oddělovač bloků' %>
+      <%= image_tag 'ccsh-logo.svg', class: 'divider__image', alt: 'Oddělovač bloků' %>
+      <%= image_tag 'sprite.svg#divider-usage', class: 'divider__image', alt: 'Oddělovač bloků' %>
+    </div>
+
+    <section  id="farnost">
+      <div class="container-px-25 container">
+        <h2 class="utilities-font-24_20 utilities-mb-15 utilities-mb-25">Farnost</h2>
+      </div>
+      <section class="articlelist">
+        <div class="container-px-25 container--large articlelist__container">
+          <a href="/pages/history">
+              <div class="articlecard articlecard--large utilities-mb-10 utilities-mb-50">
+                  <div>
+                    <div class="image--overflow_hidden image__cropped image__bgcolor articlecard__image">
+                      <div class="image__container image__opacity image__loaded">
+                        <%= image_tag 'historie-sporilova.jpg', class: 'image__img image__loaded', alt: 'Vyčpělá fotografie Spořilova' %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-px-25 container articlecard__container">
+                    <div class="articlecard__content">
+                      <div class="articlecard__content__inner">
+                        <h3 class="articlecard__title">Historie Spořilova</h3>
+                        <p class="articlecard__desc">Přečtěte se více o historii Spořilova. A to jak pražské části, tak náboženské obce</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </a>
+        </div>
+        <div class="container-px-25 container articlelist__container">
+          <div class="layout layout__spacing-20-leftoff article-list">
+            <div class="layout__item layout-halfsize articlelist__item">
+              <a href="/pages/offers-index">
+                <div class="articlecard articlecard__card--medium articlelist__article">
+                  <div>
+                    <div class="image--overflow_hidden image__cropped image__bgcolor articlecard__image">
+                      <div class="image__container image__opacity image__loaded">
+                        <%= image_tag 'pastor-compressed.jpg', class: 'image__img image__loaded', alt: 'Ruka s křížkem v ruce.' %></div>
+                    </div>
+                  </div>
+                  <div class="articlecard__container">
+                    <div class="articlecard__content">
+                      <div class="articlecard__content__inner">
+                        <h3 class="articlecard__title">Pastorační péče</h3>
+                        <p class="articlecard__desc">Křest, manželství, osobní zpověd a další</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="layout__item  layout__item layout-halfsize articlelist__item">
+              <a href="/pages/oldpeoples">
+                <div class="articlecard articlecard__card--medium articlelist__article">
+                  <div>
+                    <div class="image--overflow_hidden image__cropped image__bgcolor articlecard__image">
+                      <div class="image__container image__opacity image__loaded">
+                        <%= image_tag 'retirement-compressed.jpg', class: 'image__img image__loaded', alt: 'Dva manželé sedící vedle sebe v domově důchodců.' %>
+                          
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articlecard__container">
+                    <div class="articlecard__content">
+                      <div class="articlecard__content__inner">
+                        <h3 class="articlecard__title">Domov důchodců</h3>
+                        <p class="articlecard__desc">Možnosti spirituální péče a duchovní služby a další</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="layout__item layout-halfsize articlelist__item order-1-desktop order-2-mobile">
+              <div class="articlelist__banner">
+                <p class="articlelist__banner__motto utilities-fweight-700">&bdquo;Nepotkala vás zkouška nad lidské síly. Bůh je věrný: nedopustí, abyste byli podrobeni zkoušce, kterou byste nemohli vydržet, nýbrž se zkouškou vám připraví i východisko a dá vám sílu, abyste mohli obstát.&rdquo;</p>
+              </div>
+            </div>
+
+            <div class="layout__item layout-halfsize articlelist__item order-1-mobile order-2-desktop">
+              <a href="/welcome/photogallery">
+                <div class="articlecard articlecard__card--medium articlelist__article">
+                  <div>
+                    <div class="image--overflow_hidden image__cropped image__bgcolor articlecard__image">
+                      <div class="image__container image__opacity image__loaded"><img srcset="" sizes="" class="image__img image__loaded" alt="Los Angeles’ Under-the-Radar Art Gems" src="https://cdn.dorsia.io/images/photos/000/018/459/medium/1cb096b93fade500dc3e7a7de43fae53.jpg?1549417157"></div>
+                    </div>
+                  </div>
+                    <div class="articlecard__container">
+                      <div class="articlecard__content">
+                        <div class="articlecard__content__inner">
+                          <h3 class="articlecard__title">Fotogalerie</h3>
+                          <p class="articlecard__desc">Momenty a další</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="divider">
+      <%= image_tag 'sprite.svg#divider-usage', class: 'divider__image', alt: 'Oddělovač bloků' %>
+      <%= image_tag 'ccsh-logo.svg', class: 'divider__image', alt: 'Oddělovač bloků' %>
+      <%= image_tag 'sprite.svg#divider-usage', class: 'divider__image', alt: 'Oddělovač bloků' %>
+    </div>
+
+    <section id="kontakt">
+      <div class="container-px-25 container">
+        <h2 class="utilities-font-24_20 utilities-mb-15 utilities-mb-25">Kontakty a úřední hodiny</h2>
+      </div>
+      <section class="articlelist">
+        <div class="container-px-25 container articlelist__container">
+          <div class="layout layout__spacing-20-leftoff article-list">
+            <div class="layout__item layout-halfsize articlelist__item">
+              <div>
+                <div class="articlecard articlecard__card--medium articlelist__article">
+                  <div>
+                    <div class="image--overflow_hidden image__cropped image__bgcolor articlecard__image">
+                      <div class="image__container image__opacity image__loaded">
+                        <%= image_tag 'galerie-2.jpg', class: 'image__img image__loaded', alt: 'Farář Jan Hlavsa v jinošských letech.' %></div>
+                    </div>
+                  </div>
+                    <div class="articlecard__container">
+                      <div class="articlecard__content">
+                        <div class="articlecard__content__inner">
+                          <h3 class="articlecard__title">Farář, Jan Hlavsa</h3>
+                          <p class="articlecard__desc"> Narozen v Ústí nad Labem v roce 1979. Teologické studium, obor (misijní a charitativní práce/psychosociální studia – husitská teologie), na Husitské teologické fakultě dokončil v roce 2016. V církvi působí od roku 2003 a v roce 2018 byl vysvěcen na kněze.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layout__item layout-halfsize articlelist__item">
+              <div class="articlelist__banner">
+                <h2 class="utilities-font-20_16 articlelist__bannertitle">Kontakty</h2>
+                <div class="stack stack--align_top stack--spacing">
+                  <div class="stack__item stack__fluid">
+                    <div class="location-wrapper">
+                      <h2 class="utilities-color-grey  location-title">Kde nás najdete</h2>
+                      <p class="utilities-font-15_13 location-address">Jihovýchodní VII. 945/2, 141 00 - Praha 4 - Spořilov</p>
+                      <div class="map location-map-wrapper">
+                        <div class="location-map__container">
+                        <%= image_tag 'map.PNG', class: 'image__img image__loaded' %>
+                        </div>
+                        <div class="map__button map__align-left_none"><a href="https://mapy.cz/?q=50.0410308N%2C+14.4828381E" target="_blank" rel="noopener" class="button"><span class="button__content"><span class="button__text">Otevřít na Mapy.cz</span></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="stack stack--align_top stack--spacing">
+                  <div class="stack__item stack__fluid">
+                    <div class="location-wrapper">
+                      <h2 class="utilities-color-grey  location-title">Telefon</h2>
+                      <a href="tel:+42022451000" class="link link--red">+420 22 45 10 00</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="stack stack--align_top stack--spacing">
+                  <div class="stack__item stack__fluid">
+                    <div class="location-wrapper">
+                      <h2 class="utilities-color-grey  location-title">E-mail na farnost a osobní kontakt na faráře</h2>
+                      <a href="mailto:sporilov@ccsh.cz" class="link link--red">sporilov@ccsh.cz</a><br>
+                      <a href="mailto:jan.hlavsa@seznam.cz" class="link link--red">jan.hlavsa@seznam.cz</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="stack stack--align_top stack--spacing">
+                  <div class="stack__item stack__fluid">
+                    <div class="location-wrapper">
+                      <h2 class="utilities-color-grey  location-title">Úřední hodiny</h2>
+                      <p class="utilities-font-15_13 location-addres">Každé úterý, od 13:00 do 16:00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="stack stack--align_top stack--spacing">
+                  <div class="stack__item stack__fluid">
+                    <div class="location-wrapper">
+                      <h2 class="utilities-color-grey  location-title">Přispějte na chod obce</h2>
+                      <p class="utilities-font-15_13 location-addres">Jihovýchodní VII. 945/2, 141 00 - Praha 4 - Spořilov</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+     
+  </main>
+</div>    
+
+<script>
+function hideSection() {
+  var x = document.getElementById("app-banner");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

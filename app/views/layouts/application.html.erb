@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs-CZ" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- Basic Page Needs  ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+
+    <!-- Mobile Specific Metas  ================================================== -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title and meta description  ================================================== -->    
+    <title>NO Spořilov - CČSH</title>
+    <meta property="og:title" content="U.S. Web Design System: A design system for the federal government">
+
+    <meta name="description" content="Design and build fast, accessible, mobile-friendly government websites backed by user research.">
+    <meta property="og:description" content="Design and build fast, accessible, mobile-friendly government websites backed by user research.">
+
+    <link rel="canonical" href="https://v2.designsystem.digital.gov/">
+    <meta property="og:url" content="https://v2.designsystem.digital.gov/">
+
+    <!-- Favicons    ================================================== -->
+    <!-- 128x128 -->
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon.png">
+
+    <!-- 192x192, as recommended for Android
+    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+    -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/favicon-192.png">
+
+    <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/favicons/favicon-57.png">
+    <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicons/favicon-72.png">
+    <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicons/favicon-114.png">
+    <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/favicons/favicon-144.png">
+
+    <!-- CSS and scripts =================================================  -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', :defer => "defer" %>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+
+    <meta name="theme-color" content="#364f75">
+
+    <!-- Prevent cross-site scripting =================================================  -->
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta property="og:type" content="business">
+    <meta property="og:title" content="Intranet Ministerstva spravedlnosti">
+    <meta property="og:site_name" content="Intranet Ministerstva spravedlnosti">
+    <meta property="og:description" content="Rozvíjíme IT státní správy koncepčně.">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:street-address" content="Vyšehradská 16" />
+    <meta property="og:locality" content="Praha" />
+    <meta property="og:logo" content="" size="307x59">
+
+    <!--[if IE 9]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lte IE 8]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+  </head>
+
+  <body vocab="http://schema.org/" typeof="WebPage" class="">
+    <%= render "shared/skippy" %>
+    <%= render "shared/global-header" %>
+
+    <%= yield %>
+
+    <%= render "shared/footer" %>
+  </body>
+</html>
