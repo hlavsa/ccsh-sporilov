@@ -106,7 +106,7 @@
                     <div class="articlecard__content">
                       <div class="articlecard__content__inner">
                         <h3 class="articlecard__title">Historie Spořilova</h3>
-                        <p class="articlecard__desc">Přečtěte se více o historii Spořilova. A to jak pražské části, tak náboženské obce</p>
+                        <p class="articlecard__desc">Přečtěte se více o historii této pražské části a samotné náboženské obce</p>
                       </div>
                     </div>
                   </div>
@@ -159,12 +159,10 @@
             </div>
             <div class="layout__item layout-halfsize articlelist__item order-1-desktop order-2-mobile">
               <div class="articlelist__banner">
-                <p class="articlelist__banner__motto utilities-fweight-700">
-                  <script type="text/javascript">document.write(losung.ot())</script>
-                  <br>
-                  <br>
-                  <script type="text/javascript">document.write(losung.nt())</script>
-                </p>
+                <div id="jednota-ot" class="articlelist__banner__motto utilities-fweight-700"></div>
+                <br>
+                <br>
+                <div id="jednota-nt" class="articlelist__banner__motto utilities-fweight-700"></div>
               </div>
             </div>
 
@@ -311,7 +309,7 @@
                 <div class="stack stack--align_top stack--spacing">
                   <div class="stack__item stack__fluid">
                     <div class="location-wrapper">
-                      <h2 class="utilities-color-grey  location-title">Přispějte na chod obce</h2>
+                      <h2 class="utilities-color-grey  location-title">Přispět na chod obce</h2>
                       <p class="utilities-font-15_13 location-addres">Jihovýchodní VII. 945/2, 141 00 - Praha 4 - Spořilov</p>
                     </div>
                   </div>
@@ -324,7 +322,7 @@
                       <h2 class="utilities-color-grey">Aktivity obce</h2>
                       <div class="paragraph set-width" style="padding-left: 0;">
                         <ul class="list">
-                          <li class="utilities-font-15_13 location-addres">SMS upozornění na nadcházející bohoslužbu (kontaktujte faráře)</li>
+                          <li class="utilities-font-15_13 location-addres">pro dostávání SMS upozornění na nadcházející bohoslužby a další akce kontaktujte faráře</li>
                           <li class="utilities-font-15_13 location-addres">možnost výuky hry na kytaru a varhan</li>
                           <li class="utilities-font-15_13 location-addres">obesílání věřících pastoračními dopisy na Velikonoce a Vánoce</li>
                         </ul>  
@@ -351,4 +349,12 @@ function hideSection() {
     x.style.display = "none";
   }
 }
+</script>
+
+<script type="text/javascript">
+    var ot = document.getElementById("jednota-ot");
+    var nt = document.getElementById("jednota-nt");
+
+    ot.innerHTML = losung.ot();
+    nt.innerHTML = losung.nt();
 </script>

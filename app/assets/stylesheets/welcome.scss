@@ -135,7 +135,6 @@ a {
 }
 
 body {
-  cursor: default;
   width: 100%;
 }
 
@@ -152,6 +151,16 @@ body {
       font-size: 16px;
       line-height: 28px;
   }
+}
+
+::-moz-selection {
+  color: white;
+  background: $red;
+}
+
+::selection {
+  color: white;
+  background: $red;
 }
 
 #intercom-container .intercom-launcher-frame {
@@ -871,15 +880,14 @@ ArticleCard__ArticleCard___3Nyfr
 
 .articlelist__banner__motto {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
   letter-spacing: -.75px;
 }
 
 @media screen and (min-width: 1024px) {
   .articlelist__banner__motto {
-    font-size: 30px;
-    line-height: 50px;
-    letter-spacing: -1px;
+    font-size: 24px;
+    line-height: 40px;
   }
 }
 
