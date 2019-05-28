@@ -1,17 +1,5 @@
 <div class="body-wrapper">
-  <div class="app-banner app-banner--warning" id="app-banner">
-    <div class="width-container">
-      <p class="alert-body">
-        Zveme vás na XX. záhradní slavnost na Spořilově.
-        <br>
-        <br>
-        Ta se uskuteční 20. června, od 14:00. Dětský program připraven.
-      </p>
-      <div>
-        <button class="hide-button app-banner__button" onclick="hideSection()">Schovat toto oznámení</button>
-      </div>
-    </div>
-  </div>
+  <%= render "welcome/notify" %>
 
   <main role="main" id="content">
     <div class="intro-wrapper">
@@ -153,7 +141,7 @@
                   <div>
                     <div class="image--overflow_hidden image__cropped image__bgcolor articlecard__image">
                       <div class="image__container image__opacity image__loaded">
-                        <%= image_tag 'retirement-compressed.jpg', class: 'image__img image__loaded', alt: 'Dva manželé sedící vedle sebe v domově důchodců.' %>
+                        <%= image_tag 'retirement-compressed.jpg', class: 'image__img image__loaded', alt: 'Dva manželé sedící vedle sebe v domově seniorů.' %>
                           
                       </div>
                     </div>
@@ -161,7 +149,7 @@
                   <div class="articlecard__container">
                     <div class="articlecard__content">
                       <div class="articlecard__content__inner">
-                        <h3 class="articlecard__title">Domov důchodců</h3>
+                        <h3 class="articlecard__title">Domov pro seniory</h3>
                         <p class="articlecard__desc">Možnosti spirituální péče a duchovní služby a další</p>
                       </div>
                     </div>
@@ -171,7 +159,12 @@
             </div>
             <div class="layout__item layout-halfsize articlelist__item order-1-desktop order-2-mobile">
               <div class="articlelist__banner">
-                <p class="articlelist__banner__motto utilities-fweight-700">&bdquo;Nepotkala vás zkouška nad lidské síly. Bůh je věrný: nedopustí, abyste byli podrobeni zkoušce, kterou byste nemohli vydržet, nýbrž se zkouškou vám připraví i východisko a dá vám sílu, abyste mohli obstát.&rdquo;</p>
+                <p class="articlelist__banner__motto utilities-fweight-700">
+                  <script type="text/javascript">document.write(losung.ot())</script>
+                  <br>
+                  <br>
+                  <script type="text/javascript">document.write(losung.nt())</script>
+                </p>
               </div>
             </div>
 
@@ -180,7 +173,8 @@
                 <div class="articlecard articlecard__card--medium articlelist__article">
                   <div>
                     <div class="image--overflow_hidden image__cropped image__bgcolor articlecard__image">
-                      <div class="image__container image__opacity image__loaded"><img srcset="" sizes="" class="image__img image__loaded" alt="Los Angeles’ Under-the-Radar Art Gems" src="https://cdn.dorsia.io/images/photos/000/018/459/medium/1cb096b93fade500dc3e7a7de43fae53.jpg?1549417157"></div>
+                      <%= image_tag 'foto.jpg', class: 'image__img image__loaded', alt: 'Starý sklopný fotoaparát.' %>
+                      <!-- Zdroj od Janos Virag z Pixabay -->
                     </div>
                   </div>
                     <div class="articlecard__container">
@@ -220,20 +214,58 @@
                         <%= image_tag 'galerie-2.jpg', class: 'image__img image__loaded', alt: 'Farář Jan Hlavsa v jinošských letech.' %></div>
                     </div>
                   </div>
-                    <div class="articlecard__container">
-                      <div class="articlecard__content">
-                        <div class="articlecard__content__inner">
-                          <h3 class="articlecard__title">Farář, Jan Hlavsa</h3>
-                          <p class="articlecard__desc"> Narozen v Ústí nad Labem v roce 1979. Teologické studium, obor (misijní a charitativní práce/psychosociální studia – husitská teologie), na Husitské teologické fakultě dokončil v roce 2016. V církvi působí od roku 2003 a v roce 2018 byl vysvěcen na kněze.</p>
-                        </div>
+                  <div class="articlecard__container">
+                    <div class="articlecard__content">
+                      <div class="articlecard__content__inner">
+                        <h3 class="articlecard__title">Farář, Jan Hlavsa</h3>
+                        <p class="articlecard__desc"> Narozen v Ústí nad Labem v roce 1979. Teologické studium, obor (misijní a charitativní práce/psychosociální studia – husitská teologie), na Husitské teologické fakultě dokončil v roce 2016. V církvi působí od roku 2003 a v roce 2018 byl vysvěcen na kněze.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="utilities-mt-70_20">
+                <div class="articlelist__banner">
+                  <h2 class="utilities-font-20_16 articlelist__bannertitle">Členové Rady starších</h2>
+
+                  <div class="stack stack--align_top stack--spacing">
+                    <div class="stack__item stack__fluid">
+                      <div class="location-wrapper">
+                        <h2 class="utilities-color-grey  location-title">Jméno příjmení</h2>
+                        <p class="utilities-font-15_13 location-addres">Funkce</p>
+                        <a href="tel:+420272761280" class="link link--red">+420 272 76 12 80</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="stack stack--align_top stack--spacing">
+                    <div class="stack__item stack__fluid">
+                      <div class="location-wrapper">
+                        <h2 class="utilities-color-grey  location-title">Jméno příjmení</h2>
+                        <p class="utilities-font-15_13 location-addres">Funkce</p>
+                        <a href="tel:+420272761280" class="link link--red">+420 272 76 12 80</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="stack stack--align_top stack--spacing">
+                    <div class="stack__item stack__fluid">
+                      <div class="location-wrapper">
+                        <h2 class="utilities-color-grey  location-title">Jméno příjmení</h2>
+                        <p class="utilities-font-15_13 location-addres">Funkce</p>
+                        <a href="tel:+420272761280" class="link link--red">+420 272 76 12 80</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+
             <div class="layout__item layout-halfsize articlelist__item">
               <div class="articlelist__banner">
-                <h2 class="utilities-font-20_16 articlelist__bannertitle">Kontakty</h2>
+                <h2 class="utilities-font-20_16 articlelist__bannertitle">Základní informace</h2>
                 <div class="stack stack--align_top stack--spacing">
                   <div class="stack__item stack__fluid">
                     <div class="location-wrapper">
@@ -249,6 +281,14 @@
                   </div>
                 </div>
 
+                <div class="stack stack--align_top stack--spacing">
+                  <div class="stack__item stack__fluid">
+                    <div class="location-wrapper">
+                      <h2 class="utilities-color-grey  location-title">Úřední hodiny</h2>
+                      <p class="utilities-font-15_13 location-addres">Každé úterý, od 13:00 do 16:00</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="stack stack--align_top stack--spacing">
                   <div class="stack__item stack__fluid">
                     <div class="location-wrapper">
@@ -271,16 +311,24 @@
                 <div class="stack stack--align_top stack--spacing">
                   <div class="stack__item stack__fluid">
                     <div class="location-wrapper">
-                      <h2 class="utilities-color-grey  location-title">Úřední hodiny</h2>
-                      <p class="utilities-font-15_13 location-addres">Každé úterý, od 13:00 do 16:00</p>
+                      <h2 class="utilities-color-grey  location-title">Přispějte na chod obce</h2>
+                      <p class="utilities-font-15_13 location-addres">Jihovýchodní VII. 945/2, 141 00 - Praha 4 - Spořilov</p>
                     </div>
                   </div>
                 </div>
+
+                <hr>
                 <div class="stack stack--align_top stack--spacing">
                   <div class="stack__item stack__fluid">
                     <div class="location-wrapper">
-                      <h2 class="utilities-color-grey  location-title">Přispějte na chod obce</h2>
-                      <p class="utilities-font-15_13 location-addres">Jihovýchodní VII. 945/2, 141 00 - Praha 4 - Spořilov</p>
+                      <h2 class="utilities-color-grey">Aktivity obce</h2>
+                      <div class="paragraph set-width" style="padding-left: 0;">
+                        <ul class="list">
+                          <li class="utilities-font-15_13 location-addres">SMS upozornění na nadcházející bohoslužbu (kontaktujte faráře)</li>
+                          <li class="utilities-font-15_13 location-addres">možnost výuky hry na kytaru a varhan</li>
+                          <li class="utilities-font-15_13 location-addres">obesílání věřících pastoračními dopisy na Velikonoce a Vánoce</li>
+                        </ul>  
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -463,11 +463,21 @@ div.articlelist__container:nth-child(2) > div:nth-child(1) > div:nth-child(1) > 
 }
 
 .body-wrapper .box.article-list .body article.two-col .group-left .month {
-  font-size: 1em;
+  font-size: .75em;
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
   color: $body-color;
+}
+
+@media (min-width: 641px) {
+  .body-wrapper .box.article-list .body article.two-col .group-left .month {
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: $body-color;
+  }
 }
 
 .body-wrapper .box.article-list .body article.two-col .group-right {
@@ -965,7 +975,7 @@ ArticleCard__ArticleCard___3Nyfr
   position: relative;
   width: 201px;
   height: 188px;
-  border: 1px solid #eaded9;
+  border: 1px solid transparent;
   background: $bg-color;
 }
 
@@ -974,13 +984,19 @@ ArticleCard__ArticleCard___3Nyfr
     position: relative;
     width: 295px;
     height: 260px;
-    border: 1px solid #eaded9;
+    border: 1px solid transparent;
     background: $bg-color;
   }
 }
 
 .location-title {
-  margin-top: 30px;
+  margin-top: 10px;
+}
+
+@media (min-width: 641px) {
+  .location-title {
+    margin-top: 30px;
+  }
 }
 
 .location-map__container {
@@ -1081,6 +1097,16 @@ ArticleCard__ArticleCard___3Nyfr
 
 
 // UTILITIES
+.utilities-mt-70_20 {
+  margin-top: 20;
+}
+
+@media (min-width: 641px) {
+  .utilities-mt-70_20 {
+    margin-top: 70px;
+  }
+}
+
 .utilities-font-12 {
   font-size: 12px;
   line-height: 12px;
@@ -1234,7 +1260,7 @@ ArticleCard__ArticleCard___3Nyfr
 }
 
 .utilities-color-grey {
-  color: #7d7b7b;
+  color: #737171;
 }
 
 .utilities-font-15_13 {
