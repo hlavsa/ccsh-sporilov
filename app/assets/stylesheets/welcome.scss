@@ -59,7 +59,13 @@ body {
 }
 
 .section-pt-150_30 {
-  padding-top: 150px;
+  padding-top: 30px;
+}
+
+@media (min-width: 1025px) {
+  .section-pb-90_30 {
+    padding-top: 150px;
+  }
 }
 
 .section-pb-90_30 {
@@ -1105,8 +1111,12 @@ ArticleCard__ArticleCard___3Nyfr
 
 
 // UTILITIES
+.utilities-mb-15 {
+  margin-top: 15px;
+}
+
 .utilities-mt-70_20 {
-  margin-top: 20;
+  margin-top: 20px;
 }
 
 @media (min-width: 641px) {
