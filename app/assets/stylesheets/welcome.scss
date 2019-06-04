@@ -523,23 +523,10 @@ div.articlelist__container:nth-child(2) > div:nth-child(1) > div:nth-child(1) > 
   color: $body-color;
 }
 
-.body-wrapper .box.article-list .body article.two-col .group-right h2 {
+.body-wrapper .box.article-list .body article.two-col .group-right h4 {
   margin: 0px 0px 10px 0px;
   font-size: 1em;
   font-weight: 600;
-}
-
-.body-wrapper .box.article-list .body article.two-col .group-right h2 a {
-  color: $body-color;
-  text-decoration: none;
-}
-
-.body-wrapper .box.article-list .body article.two-col .group-right h2 a:hover {
-  color: $red;
-}
-
-.body-wrapper .box.article-list .body article.two-col .group-right h2 a:after {
-  content: ' »';
 }
 
 .body-wrapper .box {
