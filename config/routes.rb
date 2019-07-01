@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   get '/svatost-manzelstvi', to: 'offers#manzelstvi', as: 'manzelstvi'
   get '/pohreb', to: 'offers#pohreb', as: 'pohreb'
   get '/svatost-zpoved', to: 'offers#zpoved', as: 'zpoved'
+
+  resources :orders
   
 end

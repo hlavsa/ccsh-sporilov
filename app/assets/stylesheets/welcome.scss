@@ -1285,6 +1285,230 @@ utilities__mb-4___1PvEf
 }
 
 // HEADER
+.hmcts-search-toggle__search {
+  max-width: 450px;
+  position: absolute;
+  right: -15px;
+  top: 50px;
+  width: 450px;
+  z-index: 10;
+}
+
+.hmcts-hidden {
+  display: none;
+}
+.hmcts-search--ondark {
+  background-color: $red;
+  padding: 15px;
+}
+
+.hmcts-search form {
+  align-items: flex-end;
+  display: flex;
+}
+
+.hmcts-search--ondark .hmcts-search__label {
+  color: #ffffff;
+}
+.hmcts-search__label, .hmcts-search__hint {
+  text-align: left;
+}
+
+.govuk-label:not(.govuk-label--m):not(.govuk-label--l):not(.govuk-label--xl) + .govuk-hint {
+  margin-bottom: 10px;
+}
+.hmcts-search--ondark .hmcts-search__hint {
+  color: #fff;
+}
+.hmcts-search__label, .hmcts-search__hint {
+  text-align: left;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-hint {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+.govuk-hint {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hmcts-search--ondark .hmcts-search__input {
+  border-color: #ffffff;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-input {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+.govuk-input {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  padding: 5px;
+  border: 2px solid #0b0c0c;
+      border-top-color: rgb(11, 12, 12);
+      border-right-color: rgb(11, 12, 12);
+      border-bottom-color: rgb(11, 12, 12);
+      border-left-color: rgb(11, 12, 12);
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.hmcts-search__input:focus {
+  position: relative;
+  z-index: 1;
+}
+.govuk-input:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
+.hmcts-search .govuk-form-group {
+  display: inline-block;
+  flex: 1;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+.govuk-form-group {
+  margin-bottom: 30px;
+}
+.govuk-form-group::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.govuk-button {
+  padding-top: 9px;
+  padding-bottom: 6px;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-button {
+    width: auto;
+  }
+  .govuk-button {
+    margin-bottom: 32px;
+  }
+  .govuk-button {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+  }
+}
+
+.govuk-button {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.1875;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 22px;
+  padding: 7px 10px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+  border: 2px solid transparent;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #00823b;
+  box-shadow: 0 2px 0 #003418;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.govuk-button:hover, .govuk-button:focus {
+  background-color: #00682f;
+}
+
+.govuk-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -4px;
+  left: -2px;
+  background: transparent;
+}
+
+.hmcts-search-toggle__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: $red;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hmcts-search--ondark .hmcts-search__button {
+  box-shadow: 0 2px 0 #00823b;
+  margin-left: 0;
+}
+.hmcts-search__button {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 10px;
+  position: relative;
+  top: -6px;
+  vertical-align: bottom;
+  width: auto;
+}
+
+.mainmenu__item--btn {
+  background: $red;
+  line-height: 3;
+  padding: 0px;
+  border-bottom: 3px solid $body-color;
+}
+
+.mainmenu__item--btn a {
+  color: white;
+  padding: 0 5px;
+
+  &:hover {
+    text-decoration: underline;
+    color: white;
+  }
+}
+
 .header-wrapper {
   position: fixed;
   display: -webkit-box;
@@ -1344,9 +1568,9 @@ utilities__mb-4___1PvEf
 
 @media (min-width: 1025px) {
   .mainmenu__item:not(:last-child) {
-    //border-right: 1px dashed #979797;
-    margin-right: 30px;
-    padding-right: 30px;
+    border-right: 1px dashed #979797;
+    margin-right: 15px;
+    padding-right: 15px;
   }
 }
 

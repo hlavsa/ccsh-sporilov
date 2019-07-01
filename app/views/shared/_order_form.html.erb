@@ -1,0 +1,27 @@
+<%= form_for Order.new do |f| %>
+  <div class="hmcts-search-toggle__toggle">
+    <button class="hmcts-search-toggle__button" type="button" aria-haspopup="true" aria-expanded="false">Požádat o přímluvu</button>
+  </div>
+  <div class="hmcts-search-toggle__search">
+    <div class="hmcts-search hmcts-search--ondark hmcts-search--toggle hmcts-hidden">
+      <form action="/app/search-results" method="get">
+        <div class="govuk-form-group">
+          <label class="govuk-label hmcts-search__label visually-hidden" for="search2">
+            Požádat
+          </label>
+
+          <span id="search2-hint" class="govuk-hint hmcts-search__hint ">
+            Zadejte jméno a příjmení
+          </span>
+
+          <input class="govuk-input hmcts-search__input " id="search2" name="order[name]" type="search" aria-describedby="search2-hint">
+        </div>
+
+        <button type="submit" class="govuk-button hmcts-search__button ">
+          Odeslat farářovi
+        </button>
+
+      </form>
+    </div>
+  </div>
+<% end %>

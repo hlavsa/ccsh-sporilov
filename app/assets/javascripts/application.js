@@ -220,3 +220,11 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
+
+let shadesEl = document.querySelector('.hmcts-search--toggle');
+let coolButton = document.querySelector('.hmcts-search-toggle__button');
+
+coolButton.addEventListener('click', () => {
+  shadesEl.classList.toggle('hmcts-hidden');
+  document.getElementById('search2').focus();
+});
