@@ -61,3 +61,13 @@ jobs:
       - store_artifacts:
           path: /tmp/test-results
           destination: test-results
+
+  deploy_staging:
+    type: deploy
+    environment:
+      name: staging
+      url: example.com
+    script:
+      - ssh root@example.com "cd var/www/ && git checkout master && git pull origin master && exit"
+    only:
+      - master
