@@ -69,7 +69,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "cd /srv/husiti && git checkout master && git pull origin master && bundle install && bundle exec assets:precompile && /etc/init.d/husite restart && exit"
+            ssh $SSH_USER@$SSH_HOST "whoami && cd /srv/husiti && git checkout master && git pull origin master && bundle install && bundle exec assets:precompile && /etc/init.d/husite restart && exit"
 
             
 workflows:
