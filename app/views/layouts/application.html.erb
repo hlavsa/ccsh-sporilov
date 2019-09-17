@@ -74,6 +74,12 @@
     <%= render "shared/skippy" %>
     <%= render "shared/global-header" %>
 
+    <div id="flash">
+      <% if notice.present? %>
+        <%= render partial: "shared/message" %>
+      <% end %>
+    </div>
+
     <%= yield %>
 
     <%= render "shared/footer" %>
