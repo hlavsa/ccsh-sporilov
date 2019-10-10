@@ -1,6 +1,6 @@
 class OrderMailer < ApplicationMailer
 
-    default to: 'jan.hlavsa@seznam.cz'
+    default to: 'hlavsa.jara@seznam.cz'
 
     def order_mail
       @order = Order.new(params)
