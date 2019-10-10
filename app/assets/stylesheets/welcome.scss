@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  font-family: 'Lora', serif;  
+  font-family: 'Lora', serif;
+  font-display: auto;  
 }
 
 .skiplink {
@@ -1286,12 +1287,23 @@ utilities__mb-4___1PvEf
 
 // HEADER
 .hmcts-search-toggle__search {
-  max-width: 450px;
+  max-width: 340px;
   position: absolute;
   right: -15px;
   top: 50px;
   width: 450px;
   z-index: 10;
+}
+
+@media (min-width: 40.0625em) {
+  .hmcts-search-toggle__search {
+    max-width: 450px;
+    position: absolute;
+    right: -15px;
+    top: 50px;
+    width: 450px;
+    z-index: 10;
+  }
 }
 
 .hmcts-hidden {
@@ -1482,14 +1494,27 @@ utilities__mb-4___1PvEf
   box-shadow: 0 2px 0 #00823b;
   margin-left: 0;
 }
+
 .hmcts-search__button {
   display: inline-block;
   margin-bottom: 0;
   margin-left: 10px;
   position: relative;
-  top: -6px;
+  top: 0px;
   vertical-align: bottom;
   width: auto;
+}
+
+@media (min-width: 40.0625em) {
+  .hmcts-search__button {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 10px;
+    position: relative;
+    top: -6px;
+    vertical-align: bottom;
+    width: auto;
+  }
 }
 
 .mainmenu__item--btn {

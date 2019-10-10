@@ -221,10 +221,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
 
-let shadesEl = document.querySelector('.hmcts-search--toggle');
-let coolButton = document.querySelector('.hmcts-search-toggle__button');
+let shadesEl = document.querySelectorAll('.hmcts-search--toggle');
+let coolButton = document.querySelectorAll('.hmcts-search-toggle__button');
 
-coolButton.addEventListener('click', () => {
-  shadesEl.classList.toggle('hmcts-hidden');
-  document.getElementById('search2').focus();
-});
+for (var i = 0; i < coolButton.length; i++) {
+  coolButton[i].addEventListener('click', () => {
+    for (var i = 0; i < shadesEl.length; i++) {
+      shadesEl[i].classList.toggle('hmcts-hidden');
+      document.getElementById('search2').focus();
+    }
+  });
+}
