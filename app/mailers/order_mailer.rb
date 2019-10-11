@@ -4,7 +4,7 @@ class OrderMailer < ApplicationMailer
 
     def order_mail
       @order = Order.new(params)
-      mail(from: 'primluvy-sporilov@seznam.cz', subject: 'Stránky Spořilov - prosba o přímluvu')
+      mail(from: 'primluvysporilov@gmail.com', subject: 'Stránky Spořilov - prosba o přímluvu')
     end
 
   end
