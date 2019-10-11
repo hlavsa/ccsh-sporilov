@@ -70,9 +70,9 @@ Rails.application.configure do
   if ENV['SMTP_USERNAME'] && ENV['SMTP_PASSWORD']
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
-      address:              'smtp.seznam.cz',
-      port:                 465,
-      domain:               'seznam.cz',
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'ccshsporilov.cz',
       user_name:            ENV['SMTP_USERNAME'],
       password:             ENV['SMTP_PASSWORD'],
       authentication:       'plain',
