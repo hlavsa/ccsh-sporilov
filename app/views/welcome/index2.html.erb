@@ -1,5 +1,5 @@
 <div class="body-wrapper">
-  <%= render "welcome/notify" %>
+  <%#= render "welcome/notify" %>
 
   <main role="main" id="content">
     <div class="intro-wrapper">
@@ -370,13 +370,15 @@ function hideSection() {
     x.style.display = "none";
   }
 }
+</script>
 
+<script>
 function hideSection2() {
-  var x = document.getElementById("app-banner--notify");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var xx = document.getElementById("app-banner-notify");
+  if (xx.style.display === "none") {
+    xx.style.display = "block";
   } else {
-    x.style.display = "none";
+    xx.style.display = "none";
   }
 }
 </script>
