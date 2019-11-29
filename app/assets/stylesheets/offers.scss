@@ -135,3 +135,9 @@
       line-height: 1.2;
   }
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
