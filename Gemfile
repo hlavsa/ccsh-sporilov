@@ -5,8 +5,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6'
-# Use Puma as the app server
-gem 'puma', '~> 3.11'
+# Use Unicorn as prod app server and Puma in devel
+gem 'puma', '~> 3.11',	group: :development
+gem 'unicorn', '~> 5.5', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
