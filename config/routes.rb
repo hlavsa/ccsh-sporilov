@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/pastoracni-pece', to: 'pages#offers-index', as: 'offers-index'
   get '/fotogalerie', to: 'welcome#photogallery', as: 'photogallery'
   get '/domov-pro-seniory', to: 'pages#oldpeoples', as: 'oldpeoples'
+  get '/personalni-slozeni', to: 'pages#personalni-slozeni', as: 'personalni-slozeni'
 
   get '/svatost-krest', to: 'offers#krest', as: 'krest'
   get '/domaci-poboznost', to: 'offers#domaci', as: 'domaci'
