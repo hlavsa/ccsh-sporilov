@@ -799,6 +799,10 @@ div.articlelist__container:nth-child(2) > div:nth-child(1) > div:nth-child(1) > 
   padding-left: 20px;
 }
 
+.col-same-height {
+  flex: 1;
+}
+
 .articlelist__item {
   margin-bottom: 10px;
 }
