@@ -313,6 +313,7 @@ div.articlelist__container:nth-child(2) > div:nth-child(1) > div:nth-child(1) > 
   border-left: 5px solid #383e41; 
   padding: 0 20px;
   margin-top: 30px;
+  background: linear-gradient(to right, rgba(251, 246, 240, 1) 80%,rgba(251, 246, 240, 0) 100%);
 }
 
 .intro-wrapper .intro-info {
@@ -493,6 +494,24 @@ div.articlelist__container:nth-child(2) > div:nth-child(1) > div:nth-child(1) > 
 @media (min-width: 641px) {
   .body-wrapper .box.article-list .body article.two-col .group-left .month {
     font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: $body-color;
+  }
+}
+
+.body-wrapper .box.article-list .body article.two-col .group-left .action {
+  font-size: .50em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: $body-color;
+}
+
+@media (min-width: 641px) {
+  .body-wrapper .box.article-list .body article.two-col .group-left .action {
+    font-size: .75em;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
