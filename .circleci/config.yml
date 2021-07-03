@@ -10,9 +10,10 @@ commands:
       - run:
           name: Configure bundler
           command: |
+            gem update --system
             echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
             source $BASH_ENV
-            sudo gem install bundler
+            gem install bundler
 
 jobs:
   build:
@@ -39,6 +40,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            gem update --system
             bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - save_cache:
@@ -60,7 +62,7 @@ jobs:
 
       #       bundle exec rspec \
       #         --format progress \
-      #         --format RspecJunitFormatter \
+   
       #         --out /tmp/test-results/rspec.xml \
       #         --format progress \
       #         $TEST_FILES
