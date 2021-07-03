@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-ruby/ for more details
 #
-version: 2.1
+version: 2
 commands:
   configure_bundler:
     description: Configure bundler
@@ -12,7 +12,7 @@ commands:
           command: |
             echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
             source $BASH_ENV
-            gem install bundler
+            sudo gem install bundler
 
 jobs:
   build:
